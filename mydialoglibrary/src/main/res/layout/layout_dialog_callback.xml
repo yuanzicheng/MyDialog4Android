@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:minWidth="300dp"
+    android:orientation="vertical"
+    android:background="@null">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:orientation="horizontal" 
+        android:gravity="center">
+		<ImageView 
+		    android:id="@+id/icon"
+		    android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/icon_info"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:textColor="@android:color/primary_text_light"
+			android:alpha="0.54"/>
+    </LinearLayout>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="@android:color/darker_gray"/>
+    <LinearLayout 
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:background="@android:color/white"
+	        android:orientation="horizontal" >
+	        <Button
+	            android:id="@+id/negativeButton"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/selector_layout"
+	            android:textSize="12sp"
+	            android:textColor="@android:color/holo_red_light"
+	            android:layout_weight="1"
+	            android:singleLine="true" />
+	        <View
+				android:id="@+id/bottom_separator"
+	            android:layout_width="1px"
+	            android:layout_height="match_parent"
+	            android:background="@android:color/darker_gray"/>
+	        <Button
+	            android:id="@+id/positiveButton"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:background="@drawable/selector_layout"
+	            android:text="确定"
+	            android:textSize="12sp"
+	            android:textColor="@android:color/holo_blue_dark"
+	            android:layout_weight="1"
+	            android:singleLine="true" />
+	    </LinearLayout>
+    </LinearLayout>
+    
+    
+
+</LinearLayout>
